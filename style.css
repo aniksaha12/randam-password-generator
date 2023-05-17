@@ -4,15 +4,18 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 body {
     background-color: #022f4b;
     color:#fff;
 }
+
 .container {
     margin: 12%;
     width: 90%;
     max-width: 700px;
 }
+
 .display {
     width: 100%;
     margin-top: 10%;
@@ -25,28 +28,34 @@ body {
     padding: 26px 20px;
     border-radius: 5px;
 }
-.container h1{
+
+.container h1 {
     font-weight: 500;
     font-size: 45px;
 }
-.container h1 span{
+
+.container h1 span {
     color: #019f55;
     border-bottom: 4px solid #019f55;
     padding-bottom: 7px;
 }
+
 .display img {
     width: 30px;
     cursor: pointer;
 }
+
 .display input {
     border: 0;
     outline: 0;
     font-size: 24px;
 }
+
 .container button img {
     width: 28px;
     margin-right: 10px;
 }
+
 .container button {
     border: 0;
     outline: 0;
@@ -61,7 +70,47 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .copy-icon {
     width: 20px;
     cursor: pointer;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Media Queries for Mobile Devices */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 10%;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .display img {
+        margin-bottom: 10px;
+    }
+
+    .display input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .container button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
 }
